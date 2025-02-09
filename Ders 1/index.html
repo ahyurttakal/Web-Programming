@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Javascript, Boostrap, JQuery, React">
+    <meta name="description" content="Frontend Dersleri">
+    <title>İlk Dersim</title>
+
+    <style>
+        .divozellik{
+            width: 100%;
+            height:400px;
+            background-color: aqua;
+        }
+
+        #divv{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ahmet Haşim</h1>
+    <h6>YURTTAKAL</h6>
+    <!--
+        "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome",
+
+        Emmet Abbreviations
+        !+enter
+        ul>li*5+enter
+    -->
+    <!--
+        Alt+Shift+F  Düzgün Hizalama
+        Ctrl+Alt+Aşağı/Yukarı İmleç Büyütme
+        Alt+Aşağı/Yukarı Kaydırma
+        Ctrl+D Aynı Metinleri Değiştirme
+        Ctrl+Shift+K Satır Sil
+        Ctrl+Enter Satır Ekle
+
+        Lorem5+enter
+
+        get-istekler url üzerinden, post-daha güvenli
+    -->
+    <ul>
+        <li>Ahmet</li>
+        <li>Haşim</li>
+        <li>YURTTAKAL</li>
+        <li>Bilgisayar</li>
+        <li>Mühendisliği</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <p><mark>Biçimlendirme Etiketleri</mark></p>
+    <hr />
+    <p><strong>HTML</strong></p>
+    <br />
+    <p><b><i>JAVA</i></b></p>
+    <p style="font-size: large; color: red;">CSS</p>
+
+    <center>
+        <img src="tr.jpg" alt="Türk Bayrağı" width="400" height="200" />
+    </center>
+
+    Google'a gitmek için <a href="https://www.google.com" target="_blank">tıklayınız.(img)</a> 
+
+    <ol type="A">
+        <li>Birinci</li>
+        <li>İkinci</li>
+        <li>Üçüncü</li>
+    </ol>
+
+    <table border="1">
+        <tr>
+            <th colspan="3">Kişisel Bilgiler</th>
+        </tr>
+        
+        <tr>
+            <td>Ad</td>
+            <td>Soyad</td>
+            <td>Yaş</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Ahmet</td>
+            <td>YURT</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>YURTTAKAL</td>
+            <td>38</td>
+        </tr>
+    </table>
+
+    <span>Telif Hakkı Saklıdır</span>
+    <div class="divozellik" id="divv">DENEME</div>
+
+    <form action="gonder.php" method="post">
+        <input type="text" placeholder="İsminiz">
+        <input type="password" placeholder="Şifreniz">
+        <input type="email" placeholder="Email">
+        Kitap Okumak <input type="checkbox" id="kitap">
+        Erkek <input type="radio" name="cinsiyet">
+        Kadın <input type="radio" name="cinsiyet">
+        <input type="file">
+        <textarea name="mesaj" id="alan" cols="70" rows="10"></textarea>
+        <select>
+            <option value="Çay">Çay</option>
+            <option value="Kahve">Kahve</option>
+        </select>
+        <input type="submit" value="Gonder">
+        <input type="reset" value="Temizle">
+    </form>
+
+    <video width="600" height="400" controls>
+        <source src="" type="video">
+    </video>
+
+    <iframe src="http://www.aku.edu.tr" width="400" height="400" frameborder="0"></iframe>
+</body>
+
+</html>
