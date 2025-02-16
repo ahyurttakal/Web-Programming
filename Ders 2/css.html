@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            background-color:#3C8FA6;
+        }
+        
+        /* Ctrl+Ö */
+
+        /* p{
+            color:blue;
+        } */
+
+        .yaziozellik{
+            color:red;
+        }
+
+        #paragraf1{
+            color: rgb(240,210,125);
+        }
+
+        .box{
+            background-image: url(tr.jpg);
+            background-size: cover;
+            background-position: center;
+            background-color: aqua;
+            width:300px;
+            height: 300px;
+            color:white;
+            text-align: center;
+            border: 5px solid black;
+        }
+
+        .box2{
+            background-color: aqua;
+            width:50%; /* containerın yüzde 50'sini kapla */
+            height:300px;
+            border:7px inset red;
+            border-radius: 15px; /* %50 oval olur */
+            margin-top: 40px;
+            overflow: scroll;
+        }
+
+        .metin{
+            color:red;
+            background-color: yellow;
+            text-align: center;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-decoration: underline;
+            word-spacing: 3px;
+        }
+
+        /* Selectors */
+
+        *{
+
+        }
+
+        p{
+
+        }
+
+        p,a{
+
+        }
+
+        div p{
+            /* div içindeki tüm p */
+        }
+
+        div>p{
+            /* parent div olan p */
+        }
+
+        div+p{
+            /* div sonraki ilk p */
+        }
+
+        div~p{
+            /* div sonraki tüm p */
+        }
+
+        div>p:first-child{
+            /* parent div olan p'lerin ilk child */
+        }
+        div>p:nth-child(3){
+            /* parent div olan p'lerin 3. child */
+        }
+        .divozellik>ul li:last-child{
+
+        }
+
+        i{
+            font-size: 20px;
+            color: green;
+        }
+
+        a:link{
+            color: red;
+            text-decoration: none;
+        }
+        a:hover{
+            color:green;
+        }
+        a:active{
+            color:blue;
+            background-color: aliceblue;
+        }
+        a:visited{
+            color:blueviolet;
+        }
+
+        .b{
+            list-style-type: square;
+        }
+
+        #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;} /* even/odd */
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  opacity: 0.7;
+}
+
+    </style>
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <!--
+    Etiket
+    Style
+    Harici
+
+    id=eşsizdir
+    class=birden çok olabilir
+    etiket
+    -->
+
+    <h1 style="color: red; margin-left: 30px; padding-left: 20px;"> Ahmet Haşim</h1>
+
+    <h1>Yurttakal</h1>
+
+    <p style="display: inline;">Lorem ipsum dolor sit amet.</p> <!--inline, block, inline-block (inline elementlere w,h verilmez)-->
+    <p id="paragraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fugiat.</p>
+    <p class="yaziozellik">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <div class="box">
+
+
+        <!-- <h1>Programlama</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, nihil!</p> -->
+    </div>
+    
+    <div class="box2"> <!--div.box2 emmet-->
+
+    </div>
+
+    <p class="metin">Ne garip ki, çalıştıkça yükün, başardıkça düşmanın artar.</p>
+
+    <i class="fa-solid fa-house-user"></i>
+
+    <a href="https://www.aku.edu.tr" target="_blank">AFYON KOCATEPE</a>
+
+    <ul class="b">
+        <li>Çay</li>
+        <li>Kahve</li>
+        <li>Kola</li>
+    </ul>
+
+    <h1>A Fancy Table</h1>
+
+<table id="customers">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Christina Berglund</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Königlich Essen</td>
+    <td>Philip Cramer</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>Simon Crowther</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris spécialités</td>
+    <td>Marie Bertrand</td>
+    <td>France</td>
+  </tr>
+</table>
+
+<h1>This is a heading</h1>
+<img src="tr.jpg">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+</body>
+</html>
