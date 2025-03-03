@@ -23,3 +23,5 @@ Week 1: HTML
 Week 2: CSS
 
 Week 3: Boostrap
+
+Week 4: Javascript 1 (Variables, Decisions, Loops, Functions, Array)
